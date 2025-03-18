@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | Secure Messaging App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h2><i class="fas fa-comments"></i> Secure Messaging</h2>
+        <button id="logoutBtn" class="btn logout">
+          <i class="fas fa-sign-out-alt"></i> Logout
+        </button>
+      </header>
+
+      <div class="user-info">
+        <img id="userProfilePic" src="default-profile.png" alt="Profile" />
+        <p id="usernameDisplay">Welcome, User</p>
+      </div>
+
+      <div class="message-form">
+        <textarea
+          id="messageInput"
+          placeholder="Type your message..."
+        ></textarea>
+        <button id="submitMessage" class="btn">
+          <i class="fas fa-paper-plane"></i> Submit
+        </button>
+      </div>
+
+      <div class="messages-section">
+        <h3>Messages</h3>
+        <ul id="messagesList"></ul>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
